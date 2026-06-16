@@ -1,4 +1,5 @@
 # [:fr:](README_FR.md)   [:de:](README_DE.md)   [:es:](README.md)
+# Comic pages filter
 ### 📝 Description
 This is a Python-Fu plugin developed for GIMP 3.0. It automates a specific image editing workflow by performing the following steps with a single click:
 * Copies the base layer and applies the GEGL Oilify effect.
