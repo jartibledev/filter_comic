@@ -7,7 +7,7 @@ This is a Python-Fu plugin developed for GIMP 3.0. It automates a specific image
 * Creates a third copy, desaturates it (luminosity mode), sets it to Multiply mode, and applies a Threshold filter.
 |  |   
 | --- | --- | 
-| ![Fotografía sin editar](./images/IMG_7417.webp) | ![Fotografía editada](./imagenes/page_1.webp) | 
+| <img src="./images/IMG_7417.webp" alt="Sin editar" width="200"/> | <img src="./images/page_1.webp" alt="Sin editar" width="200"/> | 
 | Unedited photograph | Edited photograph | 
 
 ### ⚙️ Installation

@@ -7,7 +7,7 @@ Il s'agit d'un plugin écrit en Python-Fu pour GIMP 3.0. Il automatise un flux d
 * Crée une troisième copie, la désature (mode luminosité), la met en mode Multiplier et applique un filtre de Seuil.
 |  |   
 | --- | --- | 
-| ![Fotografía sin editar](./images/IMG_7417.webp) | ![Fotografía editada](./imagenes/page_1.webp) | 
+| <img src="./images/IMG_7417.webp" alt="Sin editar" width="200"/> | <img src="./images/page_1.webp" alt="Sin editar" width="200"/> |
 | Photographie non éditée | Photographie éditée | 
 ### ⚙️ Installation
 1. Copiez le fichier `gimp-tutorial-plug-in.py` dans votre répertoire de plugins GIMP 3 (par exemple : `~/.config/GIMP/3.0/plug-ins/`).

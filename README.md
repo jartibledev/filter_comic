@@ -7,7 +7,7 @@ Este es un plugin escrito en Python-Fu para GIMP 3.0. Automatiza un flujo de tra
 * Crea una tercera copia, la desatura (modo luminosidad), la pone en modo Multiplicar y le aplica un filtro de Umbral.
 |  |   
 | --- | --- | 
-| ![Fotografía sin editar](./images/IMG_7417.webp) | ![Fotografía editada](./imagenes/page_1.webp) | 
+| <img src="./images/IMG_7417.webp" alt="Sin editar" width="200"/> | <img src="./images/page_1.webp" alt="Sin editar" width="200"/> | 
 | Fotografía sin editar | Fotografía editada | 
 
 ### ⚙️ Instalación

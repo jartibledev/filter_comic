@@ -7,7 +7,7 @@ Dies ist ein in Python-Fu geschriebenes Plugin für GIMP 3.0. Es automatisiert e
 * Erstellt eine dritte Kopie, entsättigt sie (Luminanz-Modus), setzt sie auf Multiplizieren und wendet einen Schwellenwert-Filter an.
 |  |   
 | --- | --- | 
-| ![Fotografía sin editar](./images/IMG_7417.webp) | ![Fotografía editada](./imagenes/page_1.webp) | 
+| <img src="./images/IMG_7417.webp" alt="Sin editar" width="200"/> | <img src="./images/page_1.webp" alt="Sin editar" width="200"/> |
 | Unbearbeitetes Foto | Bearbeitetes Foto | 
 
 ### ⚙️ Installation
