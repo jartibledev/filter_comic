@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [:uk:](README_EN.md)   [:de:](README_DE.md)   [:fr:](README_FR.md)
 # Comic pages filter
 ### 📝 Descripción
