@@ -38,7 +38,7 @@ class MyFirstPlugin (Gimp.PlugIn):
         procedure.add_menu_path('<Image>/Filters')
 
         procedure.set_documentation("Automatization comic pages",
-                                    "Automatization comic pages",
+                                    "Automatization comic pages plugin for a TFM",
                                     name)
         procedure.set_attribution("Maya López", "Sergio", "2026")
 
