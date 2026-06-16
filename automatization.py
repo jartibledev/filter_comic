@@ -57,8 +57,9 @@ class MyFirstPlugin (Gimp.PlugIn):
 
     def run(self, procedure, run_mode, image, drawables, config, run_data):
         layers = image.get_layers()
-        layer = layers[1]
+        layer = layers[0]
         Gimp.message(layer.get_name())
+        
         layer_copy_drawable_proc = Gimp.get_pdb().lookup_procedure('gimp-layer-copy'); 
         layer_copy_drawable_config = layer_copy_drawable_proc.create_config(); 
         layer_copy_drawable_config.set_property('layer', layer); 
@@ -69,9 +70,25 @@ class MyFirstPlugin (Gimp.PlugIn):
         image.insert_layer(layer_copy,None, 0)
         Gimp.message("Copy")
 
+        oilify_filter = Gimp.DrawableFilter.new(layer_copy)
+        oilify_config = oilify_filter.get_config()
+        oilify_config.set_property('mask-radius', 8)
+        oilify_config.set_property('exponent', 4)
+        layer_copy.merge_filter(oilify_filter)
+
+        second_layer_copy_drawable_proc = Gimp.get_pdb().lookup_procedure('gimp-layer-copy'); 
+        second_layer_copy_drawable_config = second_layer_copy_drawable_proc.create_config(); 
+        second_layer_copy_drawable_config.set_property('layer', layer); 
+        second_layer_copy_result = second_layer_copy_drawable_proc.run(second_layer_copy_drawable_config); 
+        success = second_layer_copy_result.index(0); 
+        second_layer_copy = second_layer_copy_result.index(1)
+        second_layer_copy.set_name(layer.get_name() + "_Copy")
+        image.insert_layer(layer_copy,None, 0)
+        Gimp.message("Second Copy")
+
         multiply_mode_proc = Gimp.get_pdb().lookup_procedure('gimp-layer-set-mode'); 
         multiply_mode_proc_config = multiply_mode_proc .create_config(); 
-        multiply_mode_proc_config.set_property('layer', layer_copy); 
+        multiply_mode_proc_config.set_property('layer', second_layer_copy); 
         multiply_mode_proc_config.set_property('mode', 3); 
         multiply_mode_result = multiply_mode_proc.run(multiply_mode_proc_config); 
         success = multiply_mode_result.index(0)
@@ -86,7 +103,7 @@ class MyFirstPlugin (Gimp.PlugIn):
         third_layer_copy = third_layer_copy_result.index(1)
         third_layer_copy.set_name(layer.get_name() + "_Copy")
         image.insert_layer(third_layer_copy,None, 0)
-        Gimp.message("Copy_2")
+        Gimp.message("Copy_3")
 
         grey_proc = Gimp.get_pdb().lookup_procedure('gimp-drawable-desaturate')
         grey_config = grey_proc.create_config()
@@ -100,7 +117,7 @@ class MyFirstPlugin (Gimp.PlugIn):
         third_layer_multiply_mode_config = third_layer_multiply_mode_proc .create_config(); 
         third_layer_multiply_mode_config.set_property('layer', third_layer_copy); 
         third_layer_multiply_mode_config.set_property('mode', 3); 
-        third_layer_multiply_mode_result = multiply_mode_proc.run(third_layer_multiply_mode_config); 
+        third_layer_multiply_mode_result = third_layer_multiply_mode_proc.run(third_layer_multiply_mode_config); 
         success = third_layer_multiply_mode_result.index(0)
         Gimp.message("Multiply third layer")
 
@@ -109,6 +126,11 @@ class MyFirstPlugin (Gimp.PlugIn):
         threshold_filter_config.set_property('low', 0.5)
         threshold_filter_config.set_property('high', 1.0)
         third_layer_copy.append_filter(threshold_filter)
+        Gimp.message("threshold")
+
+        
+
+    
 
         
         # do what you want to do, then, in case of success, return:
