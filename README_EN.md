@@ -5,7 +5,6 @@ This is a Python-Fu plugin developed for GIMP 3.0. It automates a specific image
 * Copies the base layer and applies the GEGL Oilify effect.
 * Creates a second copy of the layer and sets its blend mode to Multiply.
 * Creates a third copy, desaturates it (luminosity mode), sets it to Multiply mode, and applies a Threshold filter.
-#Ejemplos
 |  |   |
 | :---: | :---: | 
 | <img src="./images/IMG_7417.webp" alt="Sin editar" width="200"/> | <img src="./images/page_1.webp" alt="Sin editar" width="200"/> | 
