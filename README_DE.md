@@ -5,8 +5,8 @@ Dies ist ein in Python-Fu geschriebenes Plugin für GIMP 3.0. Es automatisiert e
 * Kopiert die Basisebene und wendet den Ölgemälde-Effekt (GEGL Oilify) an.
 * Erstellt eine zweite Kopie der Ebene und ändert den Ebenenmodus auf Multiplizieren.
 * Erstellt eine dritte Kopie, entsättigt sie (Luminanz-Modus), setzt sie auf Multiplizieren und wendet einen Schwellenwert-Filter an.
-|  |   
-| --- | --- | 
+|  |   |
+| :---: | :---: | 
 | <img src="./images/IMG_7417.webp" alt="Sin editar" width="200"/> | <img src="./images/page_1.webp" alt="Sin editar" width="200"/> |
 | Unbearbeitetes Foto | Bearbeitetes Foto | 
 

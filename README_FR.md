@@ -5,8 +5,8 @@ Il s'agit d'un plugin écrit en Python-Fu pour GIMP 3.0. Il automatise un flux d
 * Copie le calque de base et applique l'effet Peinture à l'huile (GEGL Oilify).
 * Crée une deuxième copie du calque et modifie son mode de fusion sur Multiplier.
 * Crée une troisième copie, la désature (mode luminosité), la met en mode Multiplier et applique un filtre de Seuil.
-|  |   
-| --- | --- | 
+|  |   |
+| :---: | :---: |  
 | <img src="./images/IMG_7417.webp" alt="Sin editar" width="200"/> | <img src="./images/page_1.webp" alt="Sin editar" width="200"/> |
 | Photographie non éditée | Photographie éditée | 
 ### ⚙️ Installation
