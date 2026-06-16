@@ -5,6 +5,10 @@ This is a Python-Fu plugin developed for GIMP 3.0. It automates a specific image
 * Copies the base layer and applies the GEGL Oilify effect.
 * Creates a second copy of the layer and sets its blend mode to Multiply.
 * Creates a third copy, desaturates it (luminosity mode), sets it to Multiply mode, and applies a Threshold filter.
+|  |   
+| --- | --- | 
+| ![Fotografía sin editar](./images/IMG_7417.webp) | ![Fotografía editada](./imagenes/page_1.webp) | 
+| Unedited photograph | Edited photograph | 
 
 ### ⚙️ Installation
 1. Copy the `gimp-tutorial-plug-in.py` file to your GIMP 3 plug-ins directory (e.g., `~/.config/GIMP/3.0/plug-ins/`).

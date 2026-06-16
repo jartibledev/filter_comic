@@ -5,6 +5,10 @@ Este es un plugin escrito en Python-Fu para GIMP 3.0. Automatiza un flujo de tra
 * Copia la capa base y aplica el efecto de Óleo (GEGL Oilify).
 * Crea una segunda copia de la capa y cambia su modo de fusión a Multiplicar.
 * Crea una tercera copia, la desatura (modo luminosidad), la pone en modo Multiplicar y le aplica un filtro de Umbral.
+|  |   
+| --- | --- | 
+| ![Fotografía sin editar](./images/IMG_7417.webp) | ![Fotografía editada](./imagenes/page_1.webp) | 
+| Fotografía sin editar | Fotografía editada | 
 
 ### ⚙️ Instalación
 1. Copia el archivo `gimp-tutorial-plug-in.py` en tu directorio de plugins de GIMP 3 (por ejemplo: `~/.config/GIMP/3.0/plug-ins/`).
